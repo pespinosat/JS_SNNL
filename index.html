@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title> LISTOS - Mapas interactivos - Jurisdiciones Nuevo León </title>
+<style>
+  :root { 
+    --bg:#FBFBF8;              /* muy claro, inspirado en Parchment */
+    --card:#ffffff;            /* blanco limpio */
+    --accent:#E0C4BC;          /* Pale Dogwood */
+    --accent-soft:#f2e6e1;     /* versión MUY clara del Pale Dogwood */
+    --accent-2:#E0CEB6;        /* Dun */
+    --border:#ece7dd;          /* borde muy suave */
+    --text:#5a514a;            /* gris cálido */
+    --muted:#8a817a;
+  }
+
+  body{
+    margin:0; 
+    font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    background: var(--bg);
+    color:var(--text);
+  }
+
+  .wrap{ 
+    max-width: 980px; 
+    margin: 0 auto; 
+    padding: 40px 18px 60px; 
+  }
+
+  header{ 
+    display:flex; 
+    gap:16px; 
+    align-items:flex-start; 
+    justify-content:space-between; 
+    flex-wrap:wrap; 
+  }
+
+  h1{ 
+    margin:0; 
+    font-size: 26px; 
+    letter-spacing:.2px; 
+  }
+
+  p{ 
+    margin:8px 0 0; 
+    color:var(--muted); 
+    line-height:1.4; 
+  }
+
+  .pill{
+    display:inline-flex; 
+    align-items:center; 
+    gap:8px;
+    padding:8px 12px; 
+    border:1px solid var(--border);
+    border-radius:999px; 
+    background: var(--accent-soft);
+    color:var(--text); 
+    font-size: 13px;
+  }
+
+  .grid{
+    margin-top:22px;
+    display:grid; 
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap:16px;
+  }
+
+.card{
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 22px;
+  box-shadow: 0 4px 14px rgba(0,0,0,.04);
+  text-align: center;     }
+
+  .card h2{ 
+    margin:0; 
+    font-size: 16px; 
+  }
+
+  .meta{ 
+    margin-top:6px; 
+    color:var(--muted); 
+    font-size: 13px; 
+  }
+
+.btns{ 
+  margin-top:14px; 
+  display:flex; 
+  gap:10px; 
+  flex-wrap:wrap; 
+  justify-content: center;   }
+
+  a.btn{
+    display:inline-flex; 
+    align-items:center; 
+    gap:8px;
+    padding:10px 14px; 
+    border-radius: 12px;
+    text-decoration:none; 
+    color:#5a514a;
+    background: var(--accent-soft); 
+    border: 1px solid var(--border);
+    font-weight: 600; 
+    font-size: 13px;
+    transition: all .2s ease;
+  }
+
+  a.btn.secondary{ 
+    background: #f3efe7; 
+  }
+
+  a.btn:hover{ 
+    background: var(--accent);
+    transform: translateY(-1px);
+  }
+
+  footer{ 
+    margin-top: 50px; 
+    color: var(--muted); 
+    font-size: 12px; 
+    text-align: center;   
+    display: block;       
+  }
+
+  code{ 
+    background: #f1ede6; 
+    padding: 2px 6px; 
+    border-radius: 8px; 
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div>
+        <h1>LISTOS - Mapas interactivos - Jurisdicciones Nuevo León</h1>
+        <p>Enlaces para abrir mapas directamente en el navegador (sin descargas).</p>
+      </div>
+      <div class="pill">📍 Nuevo León · Leaflet (HTML)</div>
+    </header>
+
+    <div class="grid">
+      <!-- Mapa 1 -->
+      <div class="card">
+        <h2>Mapa de Nuevo León, áreas urbanas </h2>
+        <div class="meta"> Divisiones municipales y por jurisdicciones (1 a 4).</div>
+        <div class="btns">
+          <a class="btn" href="./Interactive_Map_BC_NL_Jurisdicciones1a4_internet_02mar2026.html" target="_blank" rel="noopener">
+            ▶ Abrir mapa
+          </a>
+          <a class="btn secondary" href="./Interactive_Map_BC_NL_Jurisdicciones1a4_internet_02mar2026.html" download>
+            ▼ Descargar HTML
+          </a>
+        </div>
+      </div>
+
+      <!-- Mapa 2 -->
+      <div class="card">
+        <h2>Mapa de Nuevo León completo </h2>
+        <div class="meta">Divisiones municipales y por jurisdicción (1 a 8).</div>
+        <div class="btns">
+          <a class="btn" href="./Interactive_Map_BC_NL_Completo_internet_02mar2026.html" target="_blank" rel="noopener">
+            ▶ Abrir mapa
+          </a>
+          <a class="btn secondary" href="./Interactive_Map_BC_NL_Completo_internet_02mar2026.html" download>
+            ▼ Descargar HTML
+          </a>
+        </div>
+      </div>
+
+    </div> 
+
+    <footer>
+      Mapas actualizados el 02 de marzo de 2026.
+    </footer>
+  </div>
+</body>
+</html>
